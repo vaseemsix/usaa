@@ -20,6 +20,7 @@ public class Login {
 		FileInputStream fis=new FileInputStream(src);
 		XSSFWorkbook wb=new XSSFWorkbook(fis);
 		XSSFSheet sheet1=wb.getSheetAt(0);
+		System.out.println(sheet1.getSheetName());
 		str[0] =sheet1.getRow(1).getCell(1).getStringCellValue();
 		str[1]=sheet1.getRow(1).getCell(2).getStringCellValue();
 		str[2]=sheet1.getRow(1).getCell(3).getStringCellValue();
